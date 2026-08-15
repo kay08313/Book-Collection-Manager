@@ -93,3 +93,28 @@ button {
   cursor: pointer;
   margin-top: 20px;
 }
+
+#greeting{
+  font-size: 50px;
+  font-weight: bold;
+  color: #FFCB05;  
+  -webkit-text-stroke: 3px #3C5AA6;
+
+}
+
+#card_display{
+  background-color: rgb(190, 19, 206);
+  width: 600px;
+
+}
+
+#title{
+  
+  margin-right: 500px;
+  
+}
+
+#pikachu{
+  display: flex;
+  flex-direction: row;
+}

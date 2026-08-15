@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    
     <link rel="icon" type="image/png" href="image/pokeball.PNG" />
   </head>
   <body>
@@ -15,8 +15,25 @@
     </nav>
     <main>
       <img src="image/pokemon logo.PNG" alt="" width="500">
-      <h1 id="greeting">Welcome Kay!!!</h1>
-      
+      <h1 id="greeting">Welcome Kay Trainer!!!</h1>
+      <br>
+      <h3 id="title">Your Collection</h3>
+      <div id="card_display">
+        <div id="pikachu">
+          <img src="image/pikachu.PNG" alt="pikachu pic" width="300">
+          <div id="detail">
+            <p>Name : Pikachu</p>
+            <p>Skill : Charge, Thunderbolt</p>
+            <p>Type : Electric</p>
+            <p>HP : 190</p>
+          </div>          
+        </div>
+        
+        <p id="name"></p>
+      </div>
+      <br>
+      <button id="add" onclick=add()>New card</button>
     </main>
+    <script src="pokelist.js"></script>
   </body>
 </html>
