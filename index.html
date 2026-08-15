@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
+    <title>Pokemon card collection</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <!--
@@ -9,17 +9,29 @@
       Remove all code in `styles.css`!
     -->
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    
+    <link rel="icon" type="image/png" href="image/pokeball.PNG" />
 
   </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
+  <body id="loginpage">
+    
     <main>
-      <h1>Home page</h1>
+      <img src="image/pokemon logo.PNG" alt="" width="500">
+      <h1 id="firstpage">Your Card Collection Manager</h1>
+      <form>
+        <label for="username">Username :</label>
+        <input type="text" id="username">
+        <br>
+        <label for="password">Password : </label>
+        <input type="password" id="password">
+        <br>
+        <button type="button" onclick=login()>Login</button>
+                
+      </form>
+      <p id="result"></p>
+      
+
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
