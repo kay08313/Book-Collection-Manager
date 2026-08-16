@@ -24,9 +24,9 @@
       <br>
       <div class="row">
         <button id="show_your_collection" onclick=show_your_collection()>show your collection</button>
-        <button id="order" onclick=orderbyname()>Order by name</button>
-        <button id="order" onclick=orderbyhp()>Order by Hp</button>
-        <button id="order" onclick=add_new_card()>Add New Card</button>
+        <button id="ordername" onclick=orderbyname()>Order by name</button>
+        <button id="orderhp" onclick=orderbyhp()>Order by Hp</button>
+        <button id="add_new_card" onclick=add_new_card()>Add New Card</button>
       </div>
       
       <br>
@@ -42,7 +42,7 @@
           <input id=add_type type="text">
           <label for="add_hp">Pokemon hp :</label>
           <input id=add_hp type="text">
-          <button id="summit" onclick=summit()>summit</button>
+          <button id="summit" type="button" onclick=upload()>upload</button>
         </form>
       
       </div>
@@ -52,6 +52,6 @@
       <br>
       
     </main>
-    <script src="pokelist.js"></script>
+  <script src="pokelist.js"></script>
   </body>
 </html>
