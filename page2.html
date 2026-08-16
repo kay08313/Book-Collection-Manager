@@ -6,33 +6,51 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
     
-    <link rel="icon" type="image/png" href="image/pokeball.PNG" />
+    <link rel="icon" type="image/png" href="image/pokeball.png" />
   </head>
-  <body>
+  <body id="mainbody">
     <nav>
       <a href="/">Sign out</a>
       <a href="/page2.html" aria-current="page">Pokemon Card Collection page</a>
     </nav>
     <main>
-      <img src="image/pokemon logo.PNG" alt="" width="500">
+      <img src="image/pokemon logo.png" alt="" width="500">
       <h1 id="greeting">Welcome Kay Trainer!!!</h1>
       <br>
-      <h3 id="title">Your Collection</h3>
-      <div id="card_display">
-        <div id="pikachu">
-          <img src="image/pikachu.PNG" alt="pikachu pic" width="300">
-          <div id="detail">
-            <p>Name : Pikachu</p>
-            <p>Skill : Charge, Thunderbolt</p>
-            <p>Type : Electric</p>
-            <p>HP : 190</p>
-          </div>          
-        </div>
+      <div id="title">
         
-        <p id="name"></p>
+      </div>
+      
+      <br>
+      <div class="row">
+        <button id="show_your_collection" onclick=show_your_collection()>show your collection</button>
+        <button id="order" onclick=orderbyname()>Order by name</button>
+        <button id="order" onclick=orderbyhp()>Order by Hp</button>
+        <button id="order" onclick=add_new_card()>Add New Card</button>
+      </div>
+      
+      <br>
+      <div id="input_new" style="display: none;">
+        <form id="input_form" action="">
+          <label for="add_img">img source :</label>
+          <input id=add_img type="text">
+          <label for="add_name">Pokemon name :</label>
+          <input id=add_name type="text">
+          <label for="add_skill">Pokemon skill :</label>
+          <input id=add_skill type="text">
+          <label for="add_type">Pokemon type :</label>
+          <input id=add_type type="text">
+          <label for="add_hp">Pokemon hp :</label>
+          <input id=add_hp type="text">
+          <button id="summit" onclick=summit()>summit</button>
+        </form>
+      
+      </div>
+      <div id="collection_container">
+
       </div>
       <br>
-      <button id="add" onclick=add()>New card</button>
+      
     </main>
     <script src="pokelist.js"></script>
   </body>
