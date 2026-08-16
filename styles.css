@@ -26,10 +26,12 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
-  background: linear-gradient(to bottom, #000099 0%, #ff0000 100%);
+  background: transparent;
+  background-image: url("image/fantastic-pokemon-home.png");
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
 }
 
@@ -41,7 +43,7 @@ nav {
   padding: 0.5rem;
   gap: 0.5rem;
   border-bottom: solid 1px #aaa;
-  background-color: #000099;
+  background-color: transparent;
 }
 
 nav a {
@@ -139,8 +141,11 @@ button {
 
 #title{
   font-size: 50px;
-  color: white;
+  background-color: rgba(225, 221, 228, 0.5);
+  color: rgb(0, 0, 0);
   margin-right: 500px;
+  border-radius: 30px;
+  padding: 20px;
   
 }
 .pokemon_picture{
