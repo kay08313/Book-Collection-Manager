@@ -166,14 +166,23 @@ function upload(){
         userstar = userstar+"★" 
     }
     const outputstar = userstar
-    new_pokemon_list.push({
-        imgscr: user_input_img.value,       // get image URL string, not src property
-        name: user_input_name.value,        // text in input field
-        skill: user_input_skill.value.split(",").map(s => s.trim()), // split string to array
-        type: user_input_type.value,
-        hp: parseInt(user_input_hp.value, 10),
-        star: outputstar
-    });
+
+    if (!user_input_img.value || !user_input_name.value || !user_input_skill.value || !user_input_type.value || !user_input_hp.value) {
+        // At least one is empty
+        alert("Please fill in all fields");
+    }else{
+        new_pokemon_list.push({
+            imgscr: user_input_img.value,       // get image URL string, not src property
+            name: user_input_name.value,        // text in input field
+            skill: user_input_skill.value.split(",").map(s => s.trim()), // split string to array
+            type: user_input_type.value,
+            hp: parseInt(user_input_hp.value, 10),
+            star: outputstar
+        });
+
+    }
+
+    document.querySelector('form').reset();
     output_element(new_container,new_pokemon_list)
     calculate_total()
 }
